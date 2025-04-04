@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flexbox Webpage Layout</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex: 1;
+  }
+
+  aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 25%;
+  }
+
+  main {
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 1;
+  }
+
+  footer {
+    background-color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    aside {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Some sidebar content here.</p>
+    </aside>
+
+    <main>
+      <h2>Main Content</h2>
+      <p>This is the main content area.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>

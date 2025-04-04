@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="apple-iphone-16.png" alt="Product 1">
+            <div class="product-title">Apple iphone 16</div>
+            <div class="product-price">75,000rs</div>
+        </div>
+        <div class="product-card">
+            <img src="vivo v40.jpeg" alt="Product 2">
+            <div class="product-title">Vivo v40</div>
+            <div class="product-price">39,999rs</div>
+        </div>
+        <div class="product-card">
+            <img src="oppo reno 11.png" alt="Product 3">
+            <div class="product-title">Oppo reno 11</div>
+            <div class="product-price">25,000rs</div>
+        </div>
+        <div class="product-card">
+            <img src="Samsung-Galaxy-S25-Ultra.webp" alt="Product 4">
+            <div class="product-title">Samsung s25 ultra</div>
+            <div class="product-price">1,29,000rs</div>
+        </div>
+        <div class="product-card">
+            <img src="samsung s25.webp" alt="Product 5">
+            <div class="product-title">Samsung s25</div>
+            <div class="product-price">79,999rs</div>
+        </div>
+        <div class="product-card">
+            <img src="oppo reno 11.png" alt="Product 6">
+            <div class="product-title">Oppo reno 11</div>
+            <div class="product-price">25,000rs</div>
+        </div>
+        <div class="product-card">
+            <img src="motorola-edge-50-neo-pdp-ecom-render-poinciana-5-.png" alt="Product 7">
+            <div class="product-title">Motorola edge 50 pro</div>
+            <div class="product-price">23,999rs</div>
+        </div>
+        <div class="product-card">
+            <img src="motorola-edge-50-pro-PDP-ecomm-render-color5-2-.png" alt="Product 8">
+            <div class="product-title">motorola edge 50 neo</div>
+            <div class="product-price">19,999rs</div>
+        </div>
+        <div class="product-card">
+            <img src="google pixel.jpg" alt="Product 9">
+            <div class="product-title">Google pixel 8</div>
+            <div class="product-price">54,999rs</div>
+        </div>
+    </div>
+</body>
+</html>
