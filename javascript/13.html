@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Object Example</title>
+</head>
+<body>
+  <h1>Car Object in JavaScript</h1>
+  <p id="output"></p>
+
+  <script>
+    // Create the car object
+    let car = {
+      brand: "Toyota",
+      model: "Fortuner",
+      year: 2020
+    };
+
+    // Access and print brand and model
+    let info = "Brand: " + car.brand + ", Model: " + car.model;
+
+    // Update the year property
+    car.year = 2023;
+
+    // Add a new property color
+    car.color = "Red";
+
+    // Add more info to display
+    info += "<br>Updated Year: " + car.year;
+    info += "<br>Color: " + car.color;
+
+    // Display output
+    document.getElementById("output").innerHTML = info;
+  </script>
+</body>
+</html>
